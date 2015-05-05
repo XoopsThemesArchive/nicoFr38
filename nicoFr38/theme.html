@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" class="Main-Table" align="center">
+  <tr>
+    <td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="Main-LogoTable">
+      <tr>
+        <td nowrap>
+			<a href="<{$xoops_url}>">
+				<img src="<{$xoops_imageurl}>/NicoFr38-Xoops-Logo.gif" width="305" height="69" alt="<{$xoops_sitename}> - <{$xoops_pagetitle}>" />
+			</a>
+		</td>
+        <td width="100%" align="center" valign="top">
+			<div style="text-align: center; padding-top: 5px;"><{$xoops_banner}></div>
+		</td>
+      </tr>
+    </table>
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="Main-LnkTable">
+        <tr>
+          <td class="Top-Menu-1">
+			  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5" /></td>
+				</tr>
+				<tr>
+				  <td><a href="<{$xoops_url}>" class="Top-Menu-Lnk">Accueil</a></td>
+				</tr>
+			  </table>
+		  </td>
+          <td nowrap class="Top-Menu-Esp"><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="5" height="1" /></td>
+          <td class="Top-Menu-2">
+			  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5" /></td>
+				</tr>
+				<tr>
+				  <td><a href="<{$xoops_url}>/modules/newbb" class="Top-Menu-Lnk">Forums</a></td>
+				</tr>
+			  </table>
+		  </td>
+          <td nowrap class="Top-Menu-Esp"><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="5" height="1" /></td>
+          <td class="Top-Menu-3">
+			  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5" /></td>
+				</tr>
+				<tr>
+				  <td><a href="<{$xoops_url}>/modules/news" class="Top-Menu-Lnk">News</a></td>
+				</tr>
+			  </table>
+		  </td>
+          <td nowrap class="Top-Menu-Esp"><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="5" height="1" /></td>
+          <td class="Top-Menu-4">
+			  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5" /></td>
+				</tr>
+				<tr>
+				  <td>
+					<{if $xoops_isuser}>
+						Bienvenue <a href="<{$xoops_url}>/user.php" class="Top-Menu-Lnk"><{$xoops_uname}></a>&nbsp; 
+					<{else}>
+						Si vous n'etes pas enregistré : <a href="<{$xoops_url}>/register.php" class="Top-Menu-Lnk">Inscrivez-vous </a> sur notre site
+					<{/if}>
+				  </td>
+				</tr>
+			  </table>
+		  </td>
+        </tr>
+      </table>
+	  <table width="100%"  border="0" cellpadding="0" cellspacing="0" class="Main-SubTable">
+		  <tr>
+			<td id="leftcolumn"> 
+				  <!-- Start left blocks loop -->
+				  <{foreach item=block from=$xoops_lblocks}>
+					<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+					<div class="blockTitle">
+					 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+					   <tr>
+						 <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5"></td>
+					   </tr>
+					   <tr>
+						 <td><{$block.title}></td>
+					   </tr>
+					 </table>
+					</div>
+					<div class="blockContent">
+						<{$block.content}>
+					</div>
+				  <{/foreach}> 
+				  <!-- End left blocks loop -->
+				  <img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+			</td>
+			<td id="centercolumn">
+				<!-- Display center blocks if any -->
+				<{if $xoops_showcblock == 1}>
+				<table  border="0" cellpadding="0" cellspacing="0" class="Main-CenterBlockTable">
+				  <tr>
+					<td colspan="2" id="centerCcolumn">
+						<!-- Start center-center blocks loop -->
+						<{foreach item=block from=$xoops_ccblocks}>
+							<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+							<div class="blockTitle">
+							 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+							   <tr>
+								 <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5"></td>
+							   </tr>
+							   <tr>
+								 <td><{$block.title}></td>
+							   </tr>
+							 </table>
+							</div>
+							<div class="blockContent">
+								<{$block.content}>
+							</div>
+						<{/foreach}>
+						<!-- End center-center blocks loop -->
+					</td>
+     			 </tr>
+				 <tr>
+					<td id="centerLcolumn">
+						<!-- Start center-left blocks loop -->
+						<{foreach item=block from=$xoops_clblocks}>
+							<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+							<div class="blockTitle">
+							 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+							   <tr>
+								 <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5"></td>
+							   </tr>
+							   <tr>
+								 <td><{$block.title}></td>
+							   </tr>
+							 </table>
+							</div>
+							<div class="blockContent">
+								<{$block.content}>
+							</div>
+						<{/foreach}>
+						<!-- End center-left blocks loop -->
+					</td>
+					<td id="centerRcolumn">
+						<!-- Start center-right blocks loop -->
+						<{foreach item=block from=$xoops_crblocks}>
+							<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+							<div class="blockTitle">
+							 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+							   <tr>
+								 <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5"></td>
+							   </tr>
+							   <tr>
+								 <td><{$block.title}></td>
+							   </tr>
+							 </table>
+							</div>
+							<div class="blockContent">
+								<{$block.content}>
+							</div>
+						<{/foreach}>
+						<!-- End center-right blocks loop -->
+					</td>
+				  </tr>
+			</table>
+			<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+		  <{/if}> 
+          <!-- End display center blocks -->
+		  <table border="0" cellpadding="0" cellspacing="0" class="Main-CenterTable">
+			  <tr>
+				<td><{$xoops_contents}></td>
+			  </tr>
+		  </table>
+		</td>
+		<{if $xoops_showrblock == 1}>
+			<td id="rightcolumn">
+			<!-- Start right blocks loop -->
+			<{foreach item=block from=$xoops_rblocks}>
+				<img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="10">
+				<div class="blockTitle">
+				 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				   <tr>
+					 <td><img src="<{$xoops_imageurl}>Images/espaceur.gif" width="1" height="5"></td>
+				   </tr>
+				   <tr>
+					 <td><{$block.title}></td>
+				   </tr>
+				 </table>
+				</div>
+				<div class="blockContent">
+					<{$block.content}>
+				</div>
+			<{/foreach}>
+			<!-- End right blocks loop -->
+			</td>
+		<{/if}>
+	</tr>
+</table>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="Main-FootTable">
+  <tr>
+    <td class="Foot-Menu"><{$xoops_footer}> : NicoFr38 </td>
+  </tr>
+</table>
+	</td>
+  </tr>
+</table>
+</body>
+</html>
